@@ -21,7 +21,7 @@ const Product: FC<Props> = ({ blok }) => {
           )}
         </header>
         <p className='theo-product__description'>{blok.description}</p>
-        <a className='pure-button theo-button'>
+        <a className='pure-button theo-button' href={blok.whereTo.cached_url}>
           {blok.available ? blok.availableLabel : blok.unavailableLabel}
         </a>
       </div>
